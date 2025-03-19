@@ -1,0 +1,100 @@
+:root {
+    --color-primary: #ee2f75;
+    --color-secondary: #ffffff;
+    --color-tertiary: #f54381;
+    --color-button: #060709;
+    --color-button-hover: #fcfdf7;
+    --color-text: #060709;
+    --color-white: #ffffff;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Contenedor principal */
+.container {
+    background: var(--color-secondary);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Títulos */
+.main-title {
+    font-size: 32px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--color-white);
+}
+
+.section-title {
+    font-family: "Inter", serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Input y botones */
+input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--color-text);
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button-add {
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+    font-weight: bold;
+}
+
+.button-add:hover {
+    background-color: var(--color-button-hover);
+    color: var(--color-white);
+}
+
+.button-draw {
+    background-color: var(--color-button);
+    color: var(--color-white);
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+}
